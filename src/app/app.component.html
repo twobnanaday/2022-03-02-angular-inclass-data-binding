@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div>
+  <input (keyup)="(0)" type="text" placeholder="Phone Number" #pNumber />
+  <p>{{ pNumber.value }}</p>
+  <button (click)="onClick(pNumber.value)">Click Me!</button>
+</div>
+
+<!-- <div class="container">
+  <p [class.special] = "isSpecial" >Go run a mile</p>
+  <p>Seriously, get off your butt Brock</p>
+</div> -->
+
+<!-- <div class="container">
+<p [style.color] = "paraColor">Hello Universe</p>
+</div> -->
